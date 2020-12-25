@@ -14,15 +14,116 @@ body{
 }
 
 #index .btn{
-    padding: 11px 10px;
-    margin: 0;
-    position: relative;
     color: #fff;
+    display: inline-block;
+    cursor: pointer;
 }
 
-#index .main-menu{
+#index .btn:hover{
+    text-decoration: underline;
+    outline: 0;
+    color: rgb(102, 102, 102);
+}
+
+#index .planet{
     opacity: .8;
-    display: inline-block;
     height: 50px;
-    cursor: pointer;
+    width:50px;
+}
+
+#index .fa-globe-asia{
+    position: relative;
+    top:9px;
+    left:5px;
+}
+
+#dropmenu{
+    list-style-type:none;
+    height:50px;
+    width: 540px;
+    position: relative;
+    left:10px;
+    top:-62px;
+}
+
+#dropmenu li{
+    position: relative;
+    width: 25%;
+    float:left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#dropmenu li a{
+    display: block;
+    margin: 0;
+    padding: 15px 0 11px;
+    color: #fffafa;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+}
+
+#dropmenu li ul{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 3px 3px;
+}
+
+#dropmenu li:last-child ul{
+    left: -100%;
+    width: 100%
+}
+
+#dropmenu li ul li{
+    overflow: hidden;
+    width: 200%;
+    height: 0;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    transition: .2s;
+}
+
+#dropmenu li ul li a{
+    padding: 13px 15px;
+    background: rgb(66, 66, 66);
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#dropmenu li:hover > a{
+    color: #fffafa;
+    background-color: rgb(85, 85, 85);
+}
+
+#dropmenu li:hover ul li{
+    overflow: visible;
+    height: 38px;
+    border-bottom: 1px solid #4d4c4c;
+    border-top: 1px solid #222222;
+}
+
+#dropmenu > li:hover > a{
+    border-radius: 3px 3px 0 0;
+}
+
+#dropmenu li:hover ul li:first-child{
+    border-top: 0;
+}
+
+#dropmenu li:hover ul li:last-child{
+    border-bottom: 0;
+}
+
+#dropmenu li:hover ul li:last-child a{
+    border-radius: 0 0 3px 3px;
 }
